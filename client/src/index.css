@@ -1,0 +1,76 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+.post-list {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.post-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.post-title {
+  font-size: 1.5rem;
+  color: #1d3557;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #a8dadc;
+  padding-bottom: 0.5rem;
+}
+
+.comments {
+  margin-top: 1rem;
+}
+
+.comments h4 {
+  font-size: 1.1rem;
+  color: #457b9d;
+  margin-bottom: 0.5rem;
+}
+
+.comment-line {
+  margin: 0.4rem 0;
+  padding-left: 0.75rem;
+  border-left: 3px solid #a8dadc;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.loader,
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #999;
+  margin-top: 4rem;
+}
+
+
