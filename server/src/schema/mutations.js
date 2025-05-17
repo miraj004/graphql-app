@@ -18,6 +18,16 @@ const mutation = new GraphQLObjectType({
         return new Post({ title }).save();
       }
     },
+    updatePost: {
+      type: PostType,
+      args: {
+        id: { type: GraphQLID },
+        title: { type: GraphQLString }
+      },
+      resolve(parentValue, { id, title }) {
+        return Post.findByIdAndUpdate(id, { title }, { new: true });
+      }
+    },
     addCommentToPost: {
       type: PostType,
       args: {
